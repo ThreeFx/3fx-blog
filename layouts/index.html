@@ -1,0 +1,15 @@
+{{ define "main" }}
+<main>
+    <ul class="post-list">
+        {{ range (where .Site.RegularPages "Section" "post").Reverse }}
+        <li>
+            <article class="post-summary">
+                <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
+                <small>on <time>01.01.0000</time></small>
+                <p>{{ .Content }}</p>
+            </article>
+        </li>
+        {{ end }}
+    </ul>
+</main>
+{{ end }}

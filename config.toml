@@ -1,0 +1,7 @@
+baseURL = "https://bfiedler.ch"
+languageCode = "en-us"
+title = "Ben's Site"
+
+assetDir = "static"
+
+sectionPagesMenu = "main"

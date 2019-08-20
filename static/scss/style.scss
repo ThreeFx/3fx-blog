@@ -1,0 +1,164 @@
+$break-small: 400px;
+$blue: #7777FF;
+$green: #77FF77;
+$red: #FF7777;
+
+* {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+
+    font-family: sans-serif;
+}
+
+body {
+    max-width: 900px;
+    margin: auto;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.content {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: flex;
+
+    justify-content: center;
+
+    background-color: $blue;
+}
+
+.titlebar {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: flex;
+
+    webkit-justify-content: space-between;
+    moz-justify-content: space-between;
+    justify-content: space-between;
+}
+
+.title {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: flex;
+
+    webkit-align-items: center;
+       moz-align-items: center;
+           align-items: center;
+
+    background-color: $red;
+    margin: 0px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.title a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.main-nav {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: flex;
+
+    background-color: $green;
+
+    webkit-justify-content: flex-end;
+       moz-justify-content: flex-end;
+           justify-content: flex-end;
+    webkit-align-items: center;
+       moz-align-items: center;
+           align-items: center;
+}
+
+.main-nav a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.main-nav ul {
+    padding: 0px;
+    margin: 0px;
+}
+
+.main-nav li {
+    display: inline-block;
+    padding: 20px;
+}
+
+.main-nav li:hover {
+    background-color: $red;
+}
+
+.post-container {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: flex;
+}
+
+.post {
+    margin: 10px;
+    max-width: 700px;
+}
+
+.post small {
+    margin: 0px;
+    padding: 0px;
+}
+
+.post h3 {
+    margin: 0px;
+}
+
+.post p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: justify;
+}
+
+.post-nav {
+    width: 200px;
+    margin: 10px;
+}
+
+.post-nav a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.post-list {
+    max-width: 600px;
+}
+
+.post-list h3 {
+    margin: 0px;
+    padding: 0px;
+}
+
+.post-list h3 a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.post-list p {
+    margin: 0px;
+    margin-top: 10px;
+    margin-bottom: 2px;
+
+    text-align: justify;
+}
+
+.post-list li {
+    margin: 10px;
+}
+
+@media screen and (max-width: $break-small) {
+}

@@ -1,0 +1,12 @@
+{{ define "main" }}
+<div class="post-container">
+    {{ partial "post/nav.html" . }}
+    <main class="post">
+        <article>
+            <h3>{{ .Title }}</h3>
+            <small>on <time>01.01.0000</time></small>
+            {{ .Content }}
+        </article>
+    </main>
+</div>
+{{ end }}

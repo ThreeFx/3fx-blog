@@ -1,0 +1,9 @@
+<nav class="post-nav">
+    <ul>
+    {{ range (where .Site.RegularPages "Section" "post").Reverse }}
+    <li>
+        <a href="{{ .Permalink }}">{{ .Title }}</a>
+    </li>
+    {{ end }}
+    </ul>
+</nav>

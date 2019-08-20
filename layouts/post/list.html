@@ -1,0 +1,16 @@
+{{ define "main" }}
+<main>
+    <ul class="post-list">
+        {{ range .Pages.ByPublishDate.Reverse }}
+        <li>
+            <article class="post-summary">
+                <h3>{{ .Title }}</h3>
+                <small>on <time>01.01.0000</time></small>
+                <p>{{ .Summary }}</p>
+                <a href="{{ .Permalink }}">continue</a>
+            </article>
+        </li>
+        {{ end }}
+    </ul>
+</main>
+{{ end }}
