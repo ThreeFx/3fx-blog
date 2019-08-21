@@ -57,11 +57,11 @@ ul {
     padding-bottom: 3px;
     padding-left: 10px;
     padding-right: 10px;
-}
 
-.title a {
-    color: inherit;
-    text-decoration: none;
+    a {
+        color: inherit;
+        text-decoration: none;
+    }
 }
 
 .main-nav {
@@ -77,25 +77,27 @@ ul {
     webkit-align-items: center;
        moz-align-items: center;
            align-items: center;
-}
 
-.main-nav a {
-    color: inherit;
-    text-decoration: none;
-}
+    a {
+        color: inherit;
+        text-decoration: none;
 
-.main-nav ul {
-    padding: 0px;
-    margin: 0px;
-}
+        padding: 20px;
+        display: inline-block;
 
-.main-nav li {
-    display: inline-block;
-    padding: 20px;
-}
+        &:hover {
+            background-color: $red;
+        }
+    }
 
-.main-nav li:hover {
-    background-color: $red;
+    ul {
+        padding: 0px;
+        margin: 0px;
+    }
+
+    li {
+        display: inline;
+    }
 }
 
 .post-container {
@@ -107,57 +109,57 @@ ul {
 .post {
     margin: 10px;
     max-width: 700px;
-}
 
-.post small {
-    margin: 0px;
-    padding: 0px;
-}
+    small {
+        margin: 0px;
+        padding: 0px;
+    }
 
-.post h3 {
-    margin: 0px;
-}
+    h3 {
+        margin: 0px;
+    }
 
-.post p {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    text-align: justify;
+    p {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        text-align: justify;
+    }
 }
 
 .post-nav {
     width: 200px;
     margin: 10px;
-}
 
-.post-nav a {
-    color: inherit;
-    text-decoration: none;
+    a {
+        color: inherit;
+        text-decoration: none;
+    }
 }
 
 .post-list {
     max-width: 600px;
-}
 
-.post-list h3 {
-    margin: 0px;
-    padding: 0px;
-}
+    h3 {
+        margin: 0px;
+        padding: 0px;
+    }
 
-.post-list h3 a {
-    color: inherit;
-    text-decoration: none;
-}
+    h3 a {
+        color: inherit;
+        text-decoration: none;
+    }
 
-.post-list p {
-    margin: 0px;
-    margin-top: 10px;
-    margin-bottom: 2px;
+    p {
+        margin: 0px;
+        margin-top: 10px;
+        margin-bottom: 2px;
 
-    text-align: justify;
-}
+        text-align: justify;
+    }
 
-.post-list li {
-    margin: 10px;
+    li {
+        margin: 10px;
+    }
 }
 
 @media screen and (max-width: $break-small) {
