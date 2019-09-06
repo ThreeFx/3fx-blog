@@ -1,0 +1,55 @@
+@import "../vars.scss";
+@import "../mixins.scss";
+
+@import "post.scss";
+@import "header.scss";
+
+* {
+    @include box-sizing(border-box);
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+body {
+    max-width: 900px;
+    margin: auto;
+    margin-top: 10px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+pre {
+    padding: 5px 10px;
+
+    margin: 10px 0px;
+
+    * {
+        font-family: 'Source Code Pro', monospace;
+    }
+}
+
+.content {
+    @include flexbox();
+    @include justify-content(center);
+
+    background-color: $blue;
+}
+
+
+.about {
+    margin: 10px;
+    width: 600px;
+
+    h3 {
+        margin: 0px;
+    }
+
+    p {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        text-align: justify;
+    }
+}
