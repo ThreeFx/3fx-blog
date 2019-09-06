@@ -1,18 +1,19 @@
 .titlebar {
-    @include flexbox();
-    @include justify-content(space-between);
+    display: grid;
+    grid-template: 1fr 1fr;
+
+    margin: 10px 20px;
+    margin-left: 10px;
 }
 
 .title {
     @include flexbox();
     @include align-items(center);
 
+    grid-column: 1 / 2;
+
     background-color: $red;
     margin: 0px;
-    padding-top: 3px;
-    padding-bottom: 3px;
-    padding-left: 10px;
-    padding-right: 10px;
 
     a {
         color: inherit;
@@ -24,6 +25,8 @@
     @include flexbox();
     @include justify-content(flex-end);
     @include align-items(center);
+
+    grid-column: 2 / 3;
 
     a {
         color: inherit;
@@ -42,14 +45,8 @@
         border-radius: 10px;
     }
 
-    ul {
-        padding: 0px;
-        margin: 0px;
-    }
-
     li {
         display: inline;
-
         margin: 0px 5px;
     }
 }

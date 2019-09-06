@@ -1,20 +1,18 @@
 .titlebar {
-    @include flexbox();
-    @include justify-content(space-between);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    margin: 10px;
 }
 
 .title {
     @include flexbox();
-    @include align-items(center);
+    @include justify-content(flex-start);
+
+    grid-columns: 1 / 2;
 
     background-color: $red;
     margin: 0px;
-    padding-top: 3px;
-    padding-bottom: 3px;
-    padding-left: 10px;
-    padding-right: 10px;
-
-    width: 100%;
 
     a {
         color: inherit;
@@ -27,18 +25,16 @@
     @include justify-content(flex-end);
     @include align-items(center);
 
+    grid-columns: 2 / 3;
+
     a {
         color: inherit;
         text-decoration: none;
         background-color: $green;
 
-        padding: 10px 20px;
-        display: inline-block;
+        padding: 2px 5px;
 
-        &:hover {
-            filter: invert(100%);
-            border: 2px solid invert($black);
-        }
+        display: inline-block;
 
         border: 2px solid $black;
         border-radius: 10px;

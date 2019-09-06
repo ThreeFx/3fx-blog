@@ -4,6 +4,18 @@
         <h3>{{ .Title }}</h3>
         <small>on <time>{{ .Date.Format "2006-01-02" }}</time></small>
         {{ .Content }}
+        <footer class="post-footer">
+            {{ with .NextInSection }}
+            <div class="next">
+                <a class="button" href="{{ .Permalink }}">Next</a>
+            </div>
+            {{ end }}
+            {{ with .PrevInSection }}
+            <div class="prev">
+                <a class="button" href="{{ .Permalink }}">Prev</a>
+            </div>
+            {{ end }}
+        </footer>
     </article>
 </main>
 {{ partial "post/nav.html" . }}

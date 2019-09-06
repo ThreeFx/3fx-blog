@@ -1,7 +1,7 @@
-//@media all and (min-width: 768px) {
+@media all and (min-width: 768px) {
     @import "nonmobile/style.scss";
-//}
+}
 
-//@media all and (max-width: 767px) {
-//    @import "mobile/style.scss";
-//}
+@media all and (max-width: 767px) {
+    @import "mobile/style.scss";
+}

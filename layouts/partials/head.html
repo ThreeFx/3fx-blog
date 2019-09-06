@@ -1,6 +1,8 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="author" content="Ben Fiedler"/>
+    <meta name="description" content="Personal blog of Ben Fiedler."/>
     {{ $scss := resources.Get "scss/style.scss" }}
     {{ $style := $scss | resources.ToCSS }}
     <link rel="stylesheet" href="{{ $style.Permalink }}">

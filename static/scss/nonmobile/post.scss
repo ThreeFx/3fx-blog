@@ -1,6 +1,5 @@
 .post {
-    padding: 10px 20px;
-    max-width: 700px;
+    grid-column: 1 / 2;
 
     small {
         margin: 0px;
@@ -18,10 +17,9 @@
 }
 
 .post-nav {
-    width: 200px;
-    min-width: 150px;
-
     margin-top: 50px;
+
+    grid-column: 2 / 3;
 
     a {
         color: inherit;
@@ -49,7 +47,7 @@
 }
 
 .post-list {
-    max-width: 700px;
+    grid-column: 1 / 2;
 
     h3 {
         margin: 0px;
@@ -66,6 +64,36 @@
     }
 
     article {
-        margin: 10px 20px 20px;
+        margin: 0px 0px 20px;
+    }
+}
+
+.post-footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 10px 0px;
+
+    font-size: 12px;
+
+    .next {
+        @include flexbox();
+        grid-column: 1 / 2;
+    }
+
+    .prev {
+        @include flexbox();
+        @include justify-content(flex-end);
+        grid-column: 2 / 3;
+    }
+
+    a {
+        padding: 5px;
+        display: inline-block;
+
+        border: 1px solid $black;
+
+        &:hover {
+            border: 1px solid invert($black);
+        }
     }
 }
