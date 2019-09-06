@@ -1,11 +1,12 @@
 {{ define "main" }}
+{{ partial "list_type.html" . }}
 <main>
     <ul class="post-list">
         {{ range .Pages.ByPublishDate.Reverse }}
         <li>
             <article class="post-summary">
-                <h3>{{ .Title }}</h3>
-                <small>on <time>01.01.0000</time></small>
+                <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
+                <small>on <time>{{ .Date.Format "2006-01-02" }}</time></small>
                 <p>{{ .Summary }}</p>
                 <a href="{{ .Permalink }}">continue</a>
             </article>

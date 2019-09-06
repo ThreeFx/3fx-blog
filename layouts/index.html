@@ -1,7 +1,7 @@
 {{ define "main" }}
 <main>
     <ul class="post-list">
-        {{ range (where .Site.RegularPages "Section" "post").Reverse }}
+        {{ range (where .Site.RegularPages "Section" "!=" "about").Reverse }}
         <li>
             <article class="post-summary">
                 <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>

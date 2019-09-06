@@ -2,6 +2,6 @@
 title: "About"
 date: 2019-08-20T19:03:02+02:00
 draft: true
-menu: "main"
+layout: "about"
 ---
-Some facts about me
+adfakjlsdhfklajshdfkljahsdkfljhasdkjh
