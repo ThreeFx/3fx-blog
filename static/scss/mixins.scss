@@ -1,0 +1,25 @@
+@mixin box-sizing($type) {
+    -webkit-box-sizing: $type;
+       -moz-box-sizing: $type;
+            box-sizing: $type;
+}
+
+@mixin flexbox {
+    display: -webkit-box;
+    display:    -moz-box;
+    display: -webkit-flex;
+    display:    -moz-flex;
+    display:         flex;
+}
+
+@mixin justify-content($type) {
+    webkit-justify-content: $type;
+       moz-justify-content: $type;
+           justify-content: $type;
+}
+
+@mixin align-items($type) {
+    webkit-align-items: $type;
+       moz-align-items: $type;
+           align-items: $type;
+}
