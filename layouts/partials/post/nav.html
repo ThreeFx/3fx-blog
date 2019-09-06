@@ -1,6 +1,6 @@
 <nav class="post-nav">
     <ul>
-    {{ range (where .Site.RegularPages "Section" .Type).GroupByDate "2006" }}
+    {{ range (where .Site.RegularPages "Section" "post").GroupByDate "2006" }}
     <li>
         <h4>{{ .Key }}</h4>
         <ul>

@@ -1,5 +1,5 @@
 {{ define "main" }}
-{{ partial "list_type.html" . }}
+{{ partial "post/nav.html" . }}
 <main>
     <ul class="post-list">
         {{ range .Pages.ByPublishDate.Reverse }}
