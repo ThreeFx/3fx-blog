@@ -1,5 +1,4 @@
 {{ define "main" }}
-{{ partial "post/nav.html" . }}
 <main class="post">
     <article>
         <h3>{{ .Title }}</h3>
@@ -7,4 +6,5 @@
         {{ .Content }}
     </article>
 </main>
+{{ partial "post/nav.html" . }}
 {{ end }}
