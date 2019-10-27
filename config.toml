@@ -1,6 +1,6 @@
-baseURL = "https://blog.bfiedler.ch"
+baseURL = "http://blog.i.3fx.ch"
 languageCode = "en-us"
-title = "Ben's Site"
+title = "3fx.ch"
 
 assetDir = "static"
 
