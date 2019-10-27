@@ -1,6 +1,6 @@
-baseURL = "http://blog.i.3fx.ch"
+baseURL = "http://blog.3fx.ch"
 languageCode = "en-us"
-title = "3fx.ch"
+title = "blog.3fx.ch"
 
 assetDir = "static"
 
