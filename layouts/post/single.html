@@ -7,12 +7,12 @@
         <footer class="post-footer">
             {{ with .NextInSection }}
             <div class="next">
-                <a class="button" href="{{ .Permalink }}">Next</a>
+                <a class="button" href="{{ .RelPermalink }}">Next</a>
             </div>
             {{ end }}
             {{ with .PrevInSection }}
             <div class="prev">
-                <a class="button" href="{{ .Permalink }}">Prev</a>
+                <a class="button" href="{{ .RelPermalink }}">Prev</a>
             </div>
             {{ end }}
         </footer>
