@@ -1,17 +1,1 @@
-{{ define "main" }}
-<main>
-    <ul class="post-list">
-        {{ range (where .Site.RegularPages.ByDate.Reverse "Layout" "!=" "about") }}
-        <li>
-            <article class="post-summary">
-                <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
-
-                {{ partial "article/metadata" . }}
-
-                <p>{{ .Summary }}</p>
-            </article>
-        </li>
-        {{ end }}
-    </ul>
-</main>
-{{ end }}
+{{ with .GetPage "/post" }}{{ .Render }}{{ end }}
