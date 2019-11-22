@@ -6,11 +6,15 @@ html {
 }
 
 body {
+    max-width: 700px;
+
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+
     text-align: justify;
     margin: 0em 1em;
-    min-height: 100vw;
-    max-width: 700px;
     margin: 0 auto;
+    height: 100vh;
 
     * {
         @include box-sizing(border-box);
@@ -22,6 +26,7 @@ body {
     }
 
     > footer {
+        margin-top: auto;
         font-size: 1rem;
         border-top: 2px solid $darkgray;
 
