@@ -83,6 +83,14 @@ body {
         background-color: #272822;
     }
 
+    p > code {
+        padding: 0.1em 0.3em;
+        font-size: 0.9rem;
+        font-family: 'Source Code Pro', monospace;
+
+        background-color: #DDDDDD;
+    }
+
     nav {
         margin: 0.5em 0;
         padding-bottom: 0.5em;
@@ -113,6 +121,11 @@ body {
 
     article {
         flex: 1;
+
+        img {
+            display: block;
+            margin: 0 auto;
+        }
     }
 
     .article-navigation {
