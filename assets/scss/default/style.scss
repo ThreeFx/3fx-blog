@@ -1,0 +1,120 @@
+@import "variables.scss";
+@import "../mixins.scss";
+
+html {
+    margin: 0em 1em;
+}
+
+body {
+    text-align: justify;
+    margin: 0em 1em;
+    min-height: 100vw;
+    max-width: 700px;
+    margin: 0 auto;
+
+    * {
+        @include box-sizing(border-box);
+    }
+
+    > * {
+        font-family: 'Source Sans Pro', sans-serif;
+        font-size: 1.1rem;
+    }
+
+    > footer {
+        font-size: 1rem;
+        border-top: 2px solid $darkgray;
+
+        p {
+            margin: 0.2em;
+        }
+    }
+
+    h1 {
+        font-size: 2.4rem;
+        border-bottom: 3px solid $darkgray;
+        margin: 0.2em 0;
+    }
+
+    h2 {
+        margin: 0;
+    }
+
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    p a {
+        color: $linkcolor;
+
+        &:visited {
+            color: $visitedlinkcolor;
+        }
+    }
+
+    pre {
+        padding: 0.5em 0.7em;
+    }
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+
+        li {
+            margin-bottom: 1em;
+        }
+    }
+
+    nav {
+        margin: 0.5em 0;
+        padding-bottom: 0.5em;
+        border-bottom: 2px solid $darkgray;
+        flex: 1;
+
+        ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        li {
+            margin: 0 1em;
+        }
+
+        h2 {
+            margin: 0;
+        }
+    }
+
+    .metadata * {
+        color: $gray;
+    }
+
+    article {
+        flex: 1;
+    }
+
+    .article-navigation {
+        border-top: 1px solid $darkgray;
+
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+        a {
+            margin: 0.2em 0;
+        }
+
+        .next {
+            display: flex;
+            grid-column: 1;
+            justify-content: flex-start;
+        }
+
+        .prev {
+            display: flex;
+            grid-column: 2;
+            justify-content: flex-end;
+        }
+    }
+}

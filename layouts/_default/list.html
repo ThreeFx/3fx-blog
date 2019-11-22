@@ -1,3 +1,15 @@
 {{ define "main" }}
-Default list template.
+<main>
+    <ul>
+        {{ range .Pages.ByPublishDate.Reverse }}
+        <li>
+            <article>
+                <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+                {{ partial "article/metadata.html" . }}
+                <p>{{ .Summary }}</p>
+            </article>
+        </li>
+        {{ end }}
+    </ul>
+</main>
 {{ end }}

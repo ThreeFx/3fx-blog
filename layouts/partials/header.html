@@ -1,10 +1,10 @@
-<header class="titlebar">
-    <h1 class="title"><a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a></h1>
-    <nav class="main-nav">
+<header>
+    <h1><a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a></h1>
+    <nav>
         <ul>
-        {{- range .Site.Menus.main -}}
-            <li><a href="{{ .URL }}" class="button">{{ .Name }}</a></li>
-        {{- end -}}
+            {{- range .Site.Menus.main -}}
+            <li><h2><a href="{{ .URL }}">{{ .Name }}</a></h2></li>
+            {{ end }}
         </ul>
     </nav>
 </header>

@@ -1,8 +1,6 @@
-baseURL = "http://blog.3fx.ch"
+baseURL = "https://blog.3fx.ch"
 languageCode = "en-us"
 title = "blog.3fx.ch"
-
-assetDir = "static"
 
 pygmentsUseClasses = true
 

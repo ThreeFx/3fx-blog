@@ -1,0 +1,16 @@
+@import "variables.scss";
+
+.arrow {
+    border: solid $darkgray;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+}
+
+.right {
+    transform: rotate(-45deg);
+}
+
+.left {
+    transform: rotate(135deg);
+}

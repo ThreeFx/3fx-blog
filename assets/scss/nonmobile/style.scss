@@ -9,10 +9,16 @@
     font-family: 'Source Sans Pro', sans-serif;
 }
 
+html {
+    background-color: $lightblue;
+}
+
 body {
     max-width: 900px;
     margin: auto;
     margin-top: 10px;
+
+    background-color: $lightred;
 }
 
 ul {
