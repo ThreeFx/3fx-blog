@@ -18,7 +18,7 @@ accessible as possible to screenreaders, if you have any suggestions how I can
 improve on it, feel free to [open an
 issue](https://github.com/ThreeFx/3fx-blog/issues).
 
-I pride myself on the fact that this Blog is free of JavaScript and obnoxious
+I pride myself on the fact that this blog is free of JavaScript and obnoxious
 trackers. All resources, including fonts, are served directly from the same
 domain from which you are visiting this site, which means that no third-party
 tracking is involved in any way.
