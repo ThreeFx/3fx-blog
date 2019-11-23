@@ -56,7 +56,7 @@ vertices ordered by their distance from the root: First comes the root itself,
 then the root's neighbors, then the root's neighbors' neighbors, etc. Let
 us have a look at an example, a tree rooted at vertex 0:
 
-{{< figure src="/post/images/rooted-tree.svg" width="100%" >}}
+{{< figure src="/post/images/rooted-tree.svg" width="300px" >}}
 
 We can easily translate this tree into a directory structure:
 
