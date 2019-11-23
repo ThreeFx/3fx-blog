@@ -1,14 +1,16 @@
 {{- if or .NextInSection .PrevInSection -}}
 <footer class="article-navigation">
-    {{ with .NextInSection }}
-    <div class="next">
-        <a class="button" href="{{ .RelPermalink }}">&larr; {{ .Title }}</a>
-    </div>
-    {{ end }}
-    {{ with .PrevInSection }}
-    <div class="prev">
-        <a class="button" href="{{ .RelPermalink }}">{{ .Title }} &rarr;</a>
-    </div>
-    {{ end }}
+    <nav>
+{{ with .NextInSection }}
+        <div class="next">
+            <a class="button" href="{{ .RelPermalink }}">&larr; {{ .Title }}</a>
+        </div>
+{{ end }}
+{{ with .PrevInSection }}
+        <div class="prev">
+            <a class="button" href="{{ .RelPermalink }}">{{ .Title }} &rarr;</a>
+        </div>
+{{ end }}
+    </nav>
 </footer>
 {{- end -}}
