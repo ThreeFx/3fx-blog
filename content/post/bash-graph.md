@@ -2,6 +2,7 @@
 title: "Solving graph problems in bash"
 date: 2019-11-22T18:30:40+01:00
 draft: true
+tags: [graphs, bash]
 ---
 
 Many interesting problems in computer science are expressible as problems on

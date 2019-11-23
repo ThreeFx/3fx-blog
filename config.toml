@@ -11,6 +11,14 @@ pygmentsUseClasses = true
     weight = 1
 
   [[menu.main]]
+    name = "Tags"
+    url = "/tags/"
+    weight = 2
+
+  [[menu.main]]
     name = "About"
     url = "/about/"
-    weight = 0
+    weight = 3
+
+[taxonomies]
+  tag = "tags"
