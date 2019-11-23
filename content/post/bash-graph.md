@@ -57,7 +57,7 @@ vertices ordered by their distance from the root: First comes the root itself,
 then the root's neighbors, then the root's neighbors' neighbors, etc. Let
 us have a look at an example, a tree rooted at vertex 0:
 
-{{< figure src="/post/images/rooted-tree.png" height="300px" >}}
+{{< figure src="/post/images/rooted-tree.svg" width="100%" >}}
 
 We can easily translate this tree into a directory structure:
 
@@ -235,7 +235,7 @@ in that directory create symbolic links to all of its neighbors.  If you recall
 the different forms of graph representation before this corresponds to adjacency
 lists. Let us try this with a simple example:
 
-{{< figure src="/post/images/graph.png" height="300px" >}}
+{{< figure src="/post/images/graph.svg" width="100%" >}}
 
 We can create the graph as follows:
 
