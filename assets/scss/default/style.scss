@@ -70,6 +70,14 @@ body {
                 color: $visitedlinkcolor;
             }
         }
+
+        code {
+            padding: 0.1em 0.3em;
+            font-size: 0.9rem;
+            font-family: 'Source Code Pro', monospace;
+
+            background-color: #DDDDDD;
+        }
     }
 
     pre {
@@ -81,14 +89,6 @@ body {
 
         color: #f8f8f2;
         background-color: #272822;
-    }
-
-    p > code {
-        padding: 0.1em 0.3em;
-        font-size: 0.9rem;
-        font-family: 'Source Code Pro', monospace;
-
-        background-color: #DDDDDD;
     }
 
     nav {
