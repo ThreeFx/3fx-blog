@@ -1,6 +1,5 @@
 ---
 title: "About me"
-draft: true
 layout: "about"
 ---
 
@@ -15,9 +14,9 @@ students](https://vis.ethz.ch).
 A disclaimer in advance: I am not a frontend developer. Barring some basic HTML
 I learned in school I have not written a single line of JavaScript and this blog
 is my first encounter with HTML5/CSS. I have tried to make this website as
-accessible as possible to screenreaders, if you have some suggestions how I can
-improve on it or any other suggestions, feel free to [open an issue]() or [write
-me an E-Mail]().
+accessible as possible to screenreaders, if you have any suggestions how I can
+improve on it, feel free to [open an
+issue](https://github.com/ThreeFx/3fx-blog/issues).
 
 I pride myself on the fact that this Blog is free of JavaScript and obnoxious
 trackers. All resources, including fonts, are served directly from the same
