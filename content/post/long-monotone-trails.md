@@ -27,9 +27,10 @@ It turns out that the longest monotone trail has length equal to the average
 degree <math><mover><mi>d</mi> &#x203E;</mover></math> of <math><mi>G</mi></math>. The proof is truly
 astouding:
 
-Put a person on each vertex of <math><mi>G</mi></math>, and for each edge <math><mi>e</mi></math>
-in <math><mi>ϕ</mi></math>, traversed in order, exchange the two people standing at
-vertices incident to <math><mi>e</mi></math>. Each person will walk a monotone trail on
+Put a person on each vertex of <math><mi>G</mi></math>, and for each edge
+<math><mi>e</mi></math> in <math><mi>E</mi></math>, traversed in order of
+<math><mi>ϕ</mi></math>, exchange the two people standing at vertices incident
+to <math><mi>e</mi></math>. Each person will walk a monotone trail on
 <math><mi>G</mi></math>.
 
 All people together traversed a distance of <math><mi>2</mi> <mo>\*</mo> |E|</math> units,
