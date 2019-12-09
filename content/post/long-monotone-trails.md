@@ -32,15 +32,15 @@ in <math><mi>ϕ</mi></math>, traversed in order, exchange the two people standin
 vertices incident to <math><mi>e</mi></math>. Each person will walk a monotone trail on
 <math><mi>G</mi></math>.
 
-All people together traversed a distance of <math><mi>2</mi> * |E|</math> units,
+All people together traversed a distance of <math><mi>2</mi> <mo>\*</mo> |E|</math> units,
 and since there are <math>|<mi>V</mi>|</math> people the average distance
-traveled is <math><mi>2</mi> * |<mi>E</mi>| / |<mi>V</mi>|</math>, which is
+traveled is <math><mi>2</mi> <mo>\*</mo> |<mi>E</mi>| / |<mi>V</mi>|</math>, which is
 exactly the average degree of <math><mi>G</mi></math>. By the [pigeonhole
 principle](https://en.wikipedia.org/wiki/Pigeonhole_principle) at least one
-person must have traveled <math><mi>2</mi> * |<mi>E</mi>| / |<mi>V</mi>|</math>
+person must have traveled <math><mi>2</mi> <mo>\*</mo> |<mi>E</mi>| / |<mi>V</mi>|</math>
 units, which concludes our proof.
 
 It is not difficult to see that this result is best possible. If
 <math><mi>G</mi></math> is a matching on <math><mi>2</mi> <mi>n</mi></math>
 vertices, then the average degree in <math><mi>G</mi></math> is <math>1</math>,
-but the longest monotone trail also has length <math>1</math>.
+and the longest monotone trail also has length <math>1</math>.
