@@ -1,7 +1,7 @@
 ---
 title: "Long monotone trails"
 date: 2019-12-10T10:10:10+01:00
-draft: true
+tags: graph-theory, short-and-sweet
 ---
 
 During a recent dinner discussion I was presented with a beautiful proof to the
