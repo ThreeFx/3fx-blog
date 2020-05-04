@@ -1,14 +1,14 @@
 {{ define "main" }}
 <main>
-    <ul class="article-list">
+    <ul class="post-list">
         {{ range .Pages.ByPublishDate.Reverse }}
         <li>
             <article>
-                <header class="article-title">
+                <header class="post-title">
                     <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
                 </header>
 
-                {{ partial "article/metadata.html" . }}
+                {{ partial "post/metadata.html" . }}
 
                 <p>{{ .Summary }}</p>
             </article>
