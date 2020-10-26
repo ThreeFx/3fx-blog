@@ -1,7 +1,8 @@
-# 3fx-blog
+# 3fx-blog (archived)
 
-This repository contains everything needed to reproduce the blog at
-[blog.3fx.ch](https://blog.3fx.ch).
+You can find the new repository [here](https://sr.ht/~bfiedler/website).
 
-If you have any suggestions on how to improve anything about this blog, feel
-free to open an issue on this repository.
+---------
+
+This repository contains everything needed to reproduce the blog which was
+hosted at [blog.3fx.ch](https://blog.3fx.ch).
